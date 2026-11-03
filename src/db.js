@@ -8,7 +8,8 @@ const pool = mysql.createPool({
   database: process.env.DB_NAME,
   waitForConnections: true,
   connectionLimit: Number(process.env.DB_CONNECTION_LIMIT || 10),
-  decimalNumbers: true
+  decimalNumbers: true,
+  dateStrings: ['DATE']
 });
 
 module.exports = pool;

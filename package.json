@@ -1,11 +1,12 @@
 {
   "name": "apirest301",
   "version": "1.0.0",
-  "description": "API REST sencilla para administrar productos con Express y MySQL",
+  "description": "API REST para las seis tablas de la tienda con Express y MySQL",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "node --watch src/server.js"
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
   },
   "keywords": [
     "nodejs",
